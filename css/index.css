@@ -1,3 +1,239 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.content {
+	max-width: 65%;
+	margin: auto;
+  }
+
+.nav_bar {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nav_bar nav {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-evenly;
+	width: 75%; 
+}
+
+.nav_bar nav a:link {
+	color: gray;
+	text-decoration: none;
+}
+
+.nav_bar nav a:visited {
+	color: gray;
+	text-decoration: none;
+}
+
+.head {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-evenly;
+	margin: 75px;
+}
+
+.inner_left {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 25%;
+	text-align: center;
+}
+
+.inner_left section{
+	font-size: 75px;	
+}
+
+.inner_left p {
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 25px;
+
+}
+
+.top {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+
+}
+
+.middle_img {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.middle_img img {
+	display: flex;
+	flex-basis: 100%;
+}
+
+.bottom {
+	display: flex;
+	margin: 25px;
+}
+
+.foot {
+	margin: 25px;
+}
+
+.copy {
+	text-align: center
+}
+
+.main_img {
+	/* border: 1px solid black;  */
+	display: flex;
+	justify-content: center;
+}
+
+.services-header-img {
+	/* border: 2px solid black; */
+	display: flex;
+	flex-basis: 100%;
+}
+
+.services {
+	/* border: 1px solid black; */
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0px;
+}
+
+.services h1 {
+	font-size: 30px;
+}
+
+.main_content {
+    margin: 40px 0px;
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: space-between;
+}
 
 
+.learn {
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin: 25px 25px 25px 0px;
+	width: 20%;
+	border-radius: 5px;
+}
+
+.description {
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	width: 600px;
+	/* margin: 10px; */
+	padding: 20px;
+}
+
+.bottom_line {
+	height: 4px;
+	background-color: black;
+  }
+
+
+.sub_footer {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	margin: 30px;
+}
+
+.sub_footer p {
+	width: 750px;
+}
+
+ul {
+	margin: 25px;
+	list-style-type: square;
+}
