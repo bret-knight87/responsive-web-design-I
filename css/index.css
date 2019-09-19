@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 
 .content {
 	max-width: 65%;
@@ -237,3 +237,73 @@ ul {
 	margin: 25px;
 	list-style-type: square;
 }
+
+@media (max-width: 800px) {
+    .content {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .nav_bar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        width: 25%;
+        margin: 25px auto 25px auto;
+    }
+
+    .nav_bar nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .head_img {
+        display: none;
+    }
+    
+    .inner_left h1 {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .inner_left p {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    .main {
+        margin: 0px 5px;
+    }
+
+    .top {
+        /* border: solid; */
+        margin: 20px 5px 10px;
+        height: 150px;
+    }
+
+    .main_top {
+        /* border: solid; */
+        margin: 10px;
+    }
+
+    .middle_img img {
+        /* border: solid; */
+        width: 50%;
+        margin: 0px 5px;
+    }
+
+    .bottom {
+        /* border: solid; */
+        margin: 20px 5px 10px;
+    }
+
+    .main_bottom {
+        /* border: solid; */
+        margin: 10px;
+    }
+}
+
